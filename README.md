@@ -12,7 +12,6 @@ SnackDash is a food delivery Android application built using Kotlin, ViewBinding
 
 - Kotlin
 - Android ViewBinding
-- Material3 (M3)
 - Core SplashScreen API
 - ConstraintLayout, CardView, RecyclerView
 - GitHub-hosted
