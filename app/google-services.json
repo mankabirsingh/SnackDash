@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "46105488308",
+    "project_id": "snackdash1234",
+    "storage_bucket": "snackdash1234.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46105488308:android:eb6fa6ae28d06c79d1a0e1",
+        "android_client_info": {
+          "package_name": "com.example.snackdash"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA9ce6UIVRlORfUPiOt2FCrAYZ0Bo4alI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

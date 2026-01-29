@@ -16,9 +16,10 @@
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:scaleType="centerCrop"
+            android:layout_height="wrap_content"
             android:background="@android:color/transparent"
+            android:paddingTop="20dp"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/back" />
 
         <TextView
@@ -55,13 +56,13 @@
                 android:text="Name" />
 
             <EditText
+                android:id="@+id/editTextName"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
-                android:inputType="text"
-                android:text="Name" />
+                android:inputType="text" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -84,15 +85,15 @@
                 android:text="Address" />
 
             <EditText
+                android:id="@+id/editTextAddress"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:inputType="textMultiLine"
-                android:text="ABC \n123" />
+                android:inputType="textMultiLine" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -115,13 +116,42 @@
                 android:text="Phone" />
 
             <EditText
+                android:id="@+id/editTextPhone"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
-                android:inputType="phone"
-                android:text="1234567890" />
+                android:inputType="phone" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/entertext"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="8dp"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -172,17 +202,27 @@
                 android:paddingLeft="8dp"
                 android:text="Total Amount" />
 
-            <EditText
+            <TextView
+                android:id="@+id/totalAmount"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
-                android:gravity="end"
                 android:inputType="none"
                 android:paddingEnd="32dp"
                 android:text="Rs400" />
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/orderItemsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp" />
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
