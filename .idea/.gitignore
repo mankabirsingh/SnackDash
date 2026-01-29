@@ -1,3 +1,24 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+# IDE
+.idea/
+.kotlin/
+
+# Local config
+local.properties
+
+# Keystore (VERY IMPORTANT)
+*.jks
+*.keystore
+
+# Build outputs
+/build
+/app/build
+
+# Gradle
+.gradle/
+
+# Logs
+*.log
